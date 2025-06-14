@@ -18,6 +18,23 @@ pokelist = [pokemon for pokemon in pokedict]
 pokeseed = random.randint(0, len(pokelist) - 1)
 pokedle = pokelist[pokeseed]
 pokedleT = pokedict[pokedle]
+print(r"""
+ ______    _____   _    _  _______  _____    _        _______ 
+(_____ \  / ___ \ | |  / )(_______)(____ \  | |      (_______)
+ _____) )| |   | || | / /  _____    _   \ \ | |       _____   
+|  ____/ | |   | || |< <  |  ___)  | |   | || |      |  ___)  
+| |      | |___| || | \ \ | |_____ | |__/ / | |_____ | |_____ 
+|_|       \_____/ |_|  \_)|_______)|_____/  |_______)|_______)
+""")
+print(r"""
+                                      _                                                                             _                _ 
+                                     | |                                                                           | |              | |
+ ____    ____  _ _ _    ____    ___  | |  _   ____  ____    ___   ____      ____  _   _   ____   ____  _   _     _ | |  ____  _   _ | |
+|  _ \  / _  )| | | |  |  _ \  / _ \ | | / ) / _  )|    \  / _ \ |  _ \    / _  )| | | | / _  ) / ___)| | | |   / || | / _  || | | ||_|
+| | | |( (/ / | | | |  | | | || |_| || |< ( ( (/ / | | | || |_| || | | |  ( (/ /  \ V / ( (/ / | |    | |_| |  ( (_| |( ( | || |_| | _ 
+|_| |_| \____) \____|  | ||_/  \___/ |_| \_) \____)|_|_|_| \___/ |_| |_|   \____)  \_/   \____)|_|     \__  |   \____| \_||_| \__  ||_|
+                       |_|                                                                            (____/                 (____/
+""")
 pokechoice = input('Enter a Pokemon (capitalized and double check your spelling pls)\n')
 while pokechoice not in pokedict:
   pokechoice = input('<LOUD INCORRECT BUZZER> das not in da list. try again \n')
