@@ -99,8 +99,7 @@ while pokechoice != pokedle:
   else:
     dex = '\033[41m' + (pokedex + 'v').center(12)
   print(type1 + '\033[0m|' + type2 + '\033[0m|' + gen + '\033[0m|' + evo + '\033[0m|' + height + '\033[0m|' + weight + '\033[0m|' + dex + '\033[0m')
-  print('wrong answer forehead')
-  pokechoice = input('Try again :)\n')
+  pokechoice = input('\n')
   while pokechoice not in pokedict:
     pokechoice = input('<LOUD INCORRECT BUZZER> das not in da list. try again \n')
 print('NICE JOB GUY')
